@@ -281,9 +281,7 @@ const config = {
     },
   plugins: [llmsTxtPlugin],
   future: {
-    v4: {
-      removeLegacyPostBuildHeadAttribute: true,
-    },
+    v4: true,
     experimental_faster: true,
   },
 };
