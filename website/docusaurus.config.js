@@ -281,14 +281,10 @@ const config = {
     },
   plugins: [llmsTxtPlugin],
   future: {
-    experimental_faster: {
-      swcJsLoader: true,
-      swcHtmlMinimizer: true,
-      lightningCssMinimizer: true,
-      mdxCrossCompilerCache: true,
-      swcJsMinimizer: true,
-      rspackBundler: true,
+    v4: {
+      removeLegacyPostBuildHeadAttribute: true,
     },
+    experimental_faster: true,
   },
 };
 
